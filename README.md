@@ -23,7 +23,11 @@ speech recogniser); later visits use the browser's cache.
 ## Files
 
 - `index.html` - the public page. It is the workshop page `live_talk_v39_cc5.html` with two places changed (the title, and one
-  block after `<body>`: the address gate and the footer line), made by `tools/build_public_page.mjs`.
+  block after `<body>`: the address gate, the keep-awake of the sound device and the footer line), made by
+  `tools/build_public_page.mjs`. The keep-awake: a browser closes a page's sound stream after 30 seconds of silence and
+  opens it again only when sound begins, and the device's wake-up then swallows the beginning of her answer. From a
+  press or key until two minutes after the last one (or after her last word) the page plays a 5 Hz tone at 0.0001 of
+  full scale - far under hearing - so the stream stays open.
 - `worker-tts_v39.mjs`, `lib/viseme-maps_v4.js` - the page's own voice worker and its mouth-shape tables.
 - `assets/` - Danit's 3D model.
 - `api/`, `brain/` - the answering server: the origin rule, the limits of a public address, her guide and what she knows
