@@ -1,0 +1,10 @@
+{
+  "name": "real-time-conversational-realistic-avatar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Danit, a realistic 3D avatar that talks live in the browser; api/ is her answering server",
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.6.0"
+  }
+}

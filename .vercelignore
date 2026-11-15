@@ -1,0 +1,13 @@
+# Vercel hosts the answering server only (api/ and brain/). The page itself is served by GitHub Pages at
+# https://shir-openu.github.io/real-time-conversational-realistic-avatar/
+# These files stay in the repository; they are just not uploaded to Vercel.
+index.html
+privacy.html
+worker-tts_v39.mjs
+assets
+lib
+tools
+README.md
+RIGHTS.md
+THIRD-PARTY-NOTICES.md
+.env*

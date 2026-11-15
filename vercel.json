@@ -1,0 +1,16 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "memory": 1024,
+      "maxDuration": 60,
+      "includeFiles": "brain/**"
+    }
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://shir-openu.github.io/real-time-conversational-realistic-avatar/",
+      "permanent": false
+    }
+  ]
+}
